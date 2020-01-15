@@ -11,7 +11,7 @@
         {
         <div class="blog">
             <h3 class="page-header">
-                @blog.Baslik
+                @Html.ActionLink(blog.Baslik, "Details", "Blog", new { id = blog.Id },new {@class="pager"})
             </h3>
             <p>
                 <span class="glyphicon glyphicon-time"></span>
@@ -21,7 +21,7 @@
             <img class="img-responsive" src="http://placehold.it/900x450" alt="" />
             <hr />
             <p>@blog.Aciklama</p>
-            <button class="btn btn-primary">Daha Fazla ...</button>
+            @Html.ActionLink("Daha Fazla...","Details","Blog",new { id=blog.Id},new { @class="btn btn-primary"})
             
         </div>
         }

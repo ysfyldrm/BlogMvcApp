@@ -33,6 +33,8 @@ namespace BlogMvcApp.Controllers
             {
                 return HttpNotFound();
             }
+
+
             return View(blog);
         }
 

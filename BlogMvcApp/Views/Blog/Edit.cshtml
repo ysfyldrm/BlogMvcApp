@@ -51,8 +51,8 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Onay, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
+            <div class="col-md-3">
+                <div class="col-md-offset-1 checkbox">
                     @Html.CheckBoxFor(model => model.Onay)
                     @Html.ValidationMessageFor(model => model.Onay, "", new { @class = "text-danger" })
                 </div>
@@ -61,8 +61,8 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Anasayfa, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
+            <div class="col-md-3">
+                <div class="col-md-offset-1 checkbox">
                     @Html.CheckBoxFor(model => model.Anasayfa)
                     @Html.ValidationMessageFor(model => model.Anasayfa, "", new { @class = "text-danger" })
                 </div>

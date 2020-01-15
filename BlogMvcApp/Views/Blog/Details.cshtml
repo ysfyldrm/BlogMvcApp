@@ -4,79 +4,18 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Blog</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.KategoriAdi)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.KategoriAdi)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Baslik)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Baslik)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Resim)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Resim)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Aciklama)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Aciklama)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Icerik)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Icerik)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EklenmeTarihi)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EklenmeTarihi)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Onay)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Onay)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Anasayfa)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Anasayfa)
-        </dd>
-
-    </dl>
-</div>
+<h1>@Model.Baslik</h1>
+<hr />
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    <span class="glyphicon glyphicon-time"></span>
+    @Model.EklenmeTarihi
 </p>
+
+<hr />
+
+<img class="img-responsive" src="http://placehold.it/1200x600" alt="" />
+<hr />
+<blockquote>
+    <p>@Model.Aciklama</p>
+</blockquote>
+<p>@Model.Icerik</p>
