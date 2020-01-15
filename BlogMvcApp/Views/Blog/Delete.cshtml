@@ -4,10 +4,7 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>@Html.DisplayFor(model=> model.Baslik) </h2>
-
-
-<h3>Başlıklı bloğu silmek istediğinize emin misiniz?</h3>
+    <h3><b> @Html.DisplayFor(model => model.Baslik) </b> Başlıklı bloğu silmek istediğinize emin misiniz? </h3>
 <hr />
 <div> 
     <dl class="dl-horizontal">
@@ -82,7 +79,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Sil." class="btn btn-default" /> |
-            @Html.ActionLink("Listeye Geri Dön.", "Index")
+            @Html.ActionLink("Listeye Dön.", "Index")
         </div>
     }
 </div>
